@@ -86,7 +86,7 @@ Discord.Name = "Discord"
 Discord.Parent = game.CoreGui
 Discord.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-function DiscordLib:Window(text)
+function DiscordLib:Window(Goz)
 	local currentservertoggled = ""
 	local minimized = false
 	local fs = false
@@ -115,7 +115,7 @@ function DiscordLib:Window(text)
 	MainFrame.Name = "MainFrame"
 	MainFrame.Parent = Discord
 	MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
-	MainFrame.BackgroundColor3 = Color3.fromRGB(0, 1, 0)
+	MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MainFrame.BorderSizePixel = 0
 	MainFrame.ClipsDescendants = true
 	MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -123,7 +123,7 @@ function DiscordLib:Window(text)
 
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(0, 1, 0)
+	TopFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	TopFrame.BackgroundTransparency = 1.000
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
@@ -3246,6 +3246,7 @@ function DiscordLib:Window(text)
 end
 
 return DiscordLib
+
 
 
 
